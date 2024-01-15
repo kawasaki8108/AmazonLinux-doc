@@ -150,6 +150,13 @@ read -p "VolumeIdを入力してください（例:vol-0df7d8233e03ef2c1）: " V
 echo "ボリュームアタッチのコマンドです。デバイス名は直接書き換えてください"
 echo "aws ec2 attach-volume --volume-id $VolumeId --instance-id $InstanceId --device <device>"
 ```
+ただし、私の環境ではコマンド打っても以下のようになるので、実際はマネコンからアタッチしています。
+```bash
+$ aws ec2 attach-volume --volume-id vol-0df7d8233e03ef2c1 --instance-id i-020539a26cbe1061f --device /dev/xvda
+
+An error occurred (InvalidParameterValue) when calling the AttachVolume operation: Value (C:/Program Files/Git/dev/xvda) for parameter device is invalid. C:/Program Files/Git/dev/xvda is not a valid EBS device name.
+```
+
 * インスタンスの開始
 [ec2start.sh](ec2start.sh)
 
