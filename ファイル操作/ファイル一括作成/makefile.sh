@@ -9,7 +9,6 @@ base_dir="$(dirname ${file_path})" #そのファイルパスのディレクト�
 #outputディレクトリのパス定義
 output_dir="${base_dir}/output_2"
 output_date="$(date "+%Y%m%d")"
-#input_file="${input_dir}/input.csv"
 output_file="${output_dir}/tempfile_"
 
 #################
