@@ -1,6 +1,5 @@
-
-* 引数（数値）の合計値と平均値を算出する関数をそれぞれ1つのライブラリとして、以下の1つのshファイルで定義
-[caluculation.sh](libraries/caluculation.sh)
+### 例題
+* 引数（数値）の合計値と平均値を算出する関数をそれぞれ1つのライブラリとして、[caluculation.sh](libraries/caluculation.sh)ファイル1つの中で複数の関数（ライブラリ的な扱いとして）定義
 * [call_libraries.sh](call_libraries.sh)内で上記の関数を呼び出して、実行する
 
 ### 構成
